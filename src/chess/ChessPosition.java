@@ -4,20 +4,11 @@ import boardgame.Position;
 
 public class ChessPosition {
 	
-<<<<<<< HEAD
-
-	
-=======
->>>>>>> dcfd1990eeb586b212128ab619a1e22bb92ee691
 	private char column;
 	private int row;
 	
 	public ChessPosition(char column, int row) {
-<<<<<<< HEAD
 		if (column < 'a' || column > 'h' || row < 1 || row > 8) {
-=======
-		if(column < 'a' || column > 'h' || row < 1 || row > 8) {
->>>>>>> dcfd1990eeb586b212128ab619a1e22bb92ee691
 			throw new ChessException("Error instantiating ChessPosition. Valid values are from a1 to h8.");
 		}
 		this.column = column;
@@ -31,11 +22,7 @@ public class ChessPosition {
 	public int getRow() {
 		return row;
 	}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> dcfd1990eeb586b212128ab619a1e22bb92ee691
 	protected Position toPosition() {
 		return new Position(8 - row, column - 'a');
 	}
@@ -48,5 +35,4 @@ public class ChessPosition {
 	public String toString() {
 		return "" + column + row;
 	}
-
 }
